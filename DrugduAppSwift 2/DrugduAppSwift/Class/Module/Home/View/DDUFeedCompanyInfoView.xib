@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="H2h-CM-dRi" customClass="DDUFeedCompanyInfoView" customModule="DrugduAppSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="just 27minutes ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl3-vH-JSS">
+                    <rect key="frame" x="244" y="18" width="116" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VG0-cx-FCT">
+                    <rect key="frame" x="15" y="0.0" width="223" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="procurement_icon" translatesAutoresizingMaskIntoConstraints="NO" id="4OA-vc-ltu">
+                            <rect key="frame" x="0.0" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="G6a-mt-Tkt"/>
+                                <constraint firstAttribute="width" constant="30" id="aXE-hw-WB4"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gmp_unverify" translatesAutoresizingMaskIntoConstraints="NO" id="7Ob-cn-Qgz">
+                            <rect key="frame" x="198" y="16" width="19" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="9Jx-el-RHa"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="IYr-D0-Ias"/>
+                                <constraint firstAttribute="width" constant="19" id="SMh-b7-IRZ"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="19" id="qzn-cw-HkA"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gsp_unverified" translatesAutoresizingMaskIntoConstraints="NO" id="keS-RF-DVh">
+                            <rect key="frame" x="173" y="16" width="19" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="19" id="Snk-K2-4RL"/>
+                                <constraint firstAttribute="height" constant="19" id="gBl-Ym-KO7"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shenzhen Mellow Heope Co,.Ltd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgw-Gh-rHu">
+                            <rect key="frame" x="36" y="18" width="131" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="131" id="hU1-fw-qBV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lgw-Gh-rHu" firstAttribute="centerY" secondItem="VG0-cx-FCT" secondAttribute="centerY" id="BpE-W8-LDh"/>
+                        <constraint firstItem="7Ob-cn-Qgz" firstAttribute="leading" secondItem="keS-RF-DVh" secondAttribute="trailing" constant="6" id="GVo-96-ors"/>
+                        <constraint firstItem="7Ob-cn-Qgz" firstAttribute="centerY" secondItem="VG0-cx-FCT" secondAttribute="centerY" id="ILR-e3-yJ5"/>
+                        <constraint firstItem="4OA-vc-ltu" firstAttribute="centerY" secondItem="VG0-cx-FCT" secondAttribute="centerY" id="Jdo-Hq-x1b"/>
+                        <constraint firstItem="4OA-vc-ltu" firstAttribute="leading" secondItem="VG0-cx-FCT" secondAttribute="leading" id="NvK-xU-xnr"/>
+                        <constraint firstAttribute="height" constant="50" id="Qhw-gh-nfa"/>
+                        <constraint firstAttribute="trailing" secondItem="7Ob-cn-Qgz" secondAttribute="trailing" constant="6" id="Txc-p1-heg"/>
+                        <constraint firstItem="keS-RF-DVh" firstAttribute="centerY" secondItem="VG0-cx-FCT" secondAttribute="centerY" id="ioZ-K7-y5o"/>
+                        <constraint firstItem="keS-RF-DVh" firstAttribute="leading" secondItem="lgw-Gh-rHu" secondAttribute="trailing" constant="6" id="jBR-Te-5cT"/>
+                        <constraint firstItem="lgw-Gh-rHu" firstAttribute="leading" secondItem="4OA-vc-ltu" secondAttribute="trailing" constant="6" id="mgw-kc-Ugf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Yl3-vH-JSS" firstAttribute="centerY" secondItem="H2h-CM-dRi" secondAttribute="centerY" id="92P-Bq-mfK"/>
+                <constraint firstItem="VG0-cx-FCT" firstAttribute="centerY" secondItem="H2h-CM-dRi" secondAttribute="centerY" id="RYJ-dz-fdY"/>
+                <constraint firstItem="Yl3-vH-JSS" firstAttribute="leading" secondItem="VG0-cx-FCT" secondAttribute="trailing" constant="6" id="iaW-VY-2J2"/>
+                <constraint firstItem="xEM-2X-SB3" firstAttribute="trailing" secondItem="Yl3-vH-JSS" secondAttribute="trailing" constant="15" id="qSh-Ns-Jdj"/>
+                <constraint firstItem="VG0-cx-FCT" firstAttribute="leading" secondItem="xEM-2X-SB3" secondAttribute="leading" constant="15" id="saD-6f-8vL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="xEM-2X-SB3"/>
+            <point key="canvasLocation" x="-18.5" y="75"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gmp_unverify" width="19" height="19"/>
+        <image name="gsp_unverified" width="19" height="19"/>
+        <image name="procurement_icon" width="43" height="43"/>
+    </resources>
+</document>

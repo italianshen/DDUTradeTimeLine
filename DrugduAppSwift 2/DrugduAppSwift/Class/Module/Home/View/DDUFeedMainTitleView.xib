@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Gdm-cT-Hz3" customClass="DDUFeedMainTitleView" customModule="DrugduAppSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bA-Ii-G6L">
+                    <rect key="frame" x="15" y="0.0" width="345" height="56"/>
+                    <string key="text">Am 27. September veranstaltet der Lehrstuhl für Automatisierung Am 27. September veranstaltet der Lehrstuhl für Automatisierung Am 27. September veranstaltet der Lehrstuhl für Automatisierung </string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9bA-Ii-G6L" firstAttribute="top" secondItem="g7p-14-itD" secondAttribute="top" id="BVn-WW-xPd"/>
+                <constraint firstItem="g7p-14-itD" firstAttribute="bottom" secondItem="9bA-Ii-G6L" secondAttribute="bottom" id="E81-hG-Fme"/>
+                <constraint firstItem="g7p-14-itD" firstAttribute="trailing" secondItem="9bA-Ii-G6L" secondAttribute="trailing" constant="15" id="Xeh-ln-YCU"/>
+                <constraint firstItem="9bA-Ii-G6L" firstAttribute="leading" secondItem="g7p-14-itD" secondAttribute="leading" constant="15" id="r8d-hm-7Gd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="g7p-14-itD"/>
+            <connections>
+                <outlet property="mainTitleLabel" destination="9bA-Ii-G6L" id="kCi-Yx-9VA"/>
+            </connections>
+            <point key="canvasLocation" x="73" y="247"/>
+        </view>
+    </objects>
+</document>
