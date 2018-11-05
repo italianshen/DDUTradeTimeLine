@@ -80,6 +80,7 @@ class DDUHomeVC: UIViewController {
         //设置上下拉刷新
         setupRefresh();
         loadNewData();
+        print("aaaa")
     }
 
     override func viewWillAppear(_ animated: Bool) {
